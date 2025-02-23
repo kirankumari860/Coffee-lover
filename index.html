@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coffee Lovers</title>
+    <style>
+    
+       body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:rgb(241, 226, 205);
+            color:black; 
+        }
+
+        header {
+            background-color: rgb(145, 95, 30);
+            color:white;
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        header h1 {
+            margin: o;
+            font-size: 3em;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        nav {
+            background-color:rgb(192, 136, 62);
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1em;
+            margin: 0 15px;
+            padding: 10px 15px;
+        }
+
+        nav a:hover {
+            background-color: rgb(145, 95, 30);
+            border-radius: 5px;
+        }
+
+        main {
+            padding: 30px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap:none;
+            justify-content: space-around;
+            gap: 10px;
+        }
+
+        .card {
+            background-color: burlywood;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: calc(33.333% - 20px);
+            text-align: center;
+            padding: 20px;
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .card h3 {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+
+        .card p {
+            font-size: 1.1em;
+            margin: 0;
+        }
+
+        footer {
+            background-color:rgb(145, 95, 30);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        @media (max-width: 1024px) {
+            .card {
+                width: calc(50% - 20px);
+            }
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5em;
+            }
+
+            .card {
+                width: 100%;
+            }
+
+            nav a {
+                font-size: 1em;
+                padding: 8px 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Coffee Lovers</h1>
+    <p>Your one-stop shop for the finest coffee blends</p>
+</header>
+
+<nav>
+    <a href="#Home">Home</a>
+    <a href="about.htm">About</a>
+    <a href="menu.htm">Menu</a>
+    <a href="contact.htm">Contact</a>
+</nav>
+
+<main>
+    <section id="home">
+        <h2>Welcome to Coffee Lovers!</h2>
+        <p>We serve the finest coffee from around the world. Our beans are freshly roasted and prepared with love.</p>
+    </section>
+
+    <section id="menu">
+        <h2>Our Coffee Blends</h2>
+        <div class="container">
+            <div class="card">
+                <img src="espresso.jpg" alt="Espresso">
+                <h3>Espresso</h3>
+                <p>Espresso with steamed milk and a layer of foamy milk on top the perfect balance.</p>
+            </div>
+            <div class="card">
+                <img src="latte.avif" alt="Latte">
+                <h3>Latte</h3>
+                <p>A day without a latte is like... just kidding, I have no idea! ...</p>
+            </div>
+            <div class="card">
+                <img src="causspionn.jpg" alt="Cappuccino">
+                <h3>Cappuccino</h3>
+                <p>May your coffee be strong and your goals stronger. ...</p>
+            </div>
+            <div class="card">
+                <img src="coffeee.jpg" alt=" Ice Coffee">
+                <h4>Ice coffee</h4>
+                <p>When life gives you hot days, make iced coffee</p>
+
+            </div>
+           
+            
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Coffee Lovers | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
